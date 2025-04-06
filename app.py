@@ -27,7 +27,7 @@ def main():
          f"""
          <style>
          .stApp {{
-             background-image: url("https://github.com/ahmedjajan93/Mushromms-Classification/main/background.PNG");
+             background-image: url("https://github.com/ahmedjajan93/Mushromms-Classification/main/img.png");
              background-size:cover;
              background-position:center;
              background-repeat: no-repeat;
