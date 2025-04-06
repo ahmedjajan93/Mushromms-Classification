@@ -131,7 +131,7 @@ def main():
             st.write('Recall',round(recall_score(y_test,y_pred,labels=class_names),2))
             plot_metrics(metrics_list)
 
-    st.markdown(
+st.markdown(
          f"""
          <style>
          .stApp {{
