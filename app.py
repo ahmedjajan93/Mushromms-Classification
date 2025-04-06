@@ -25,19 +25,27 @@ X_train, X_test, y_train, y_test = load_data()
 def main():
 
     st.markdown(
-         f"""
-         <style>
-         .stApp {{
-             background-image: url("https://github.com/ahmedjajan93/Mushromms-Classification/main/img.png");
-             background-size:cover;
-             background-position:center;
-             background-repeat: no-repeat;
-             background-attachment: fiexed;
-         }}
-         </style>
-         """,
-           unsafe_allow_html=True
-     )
+    """
+    <style>
+    [data-testid="stAppViewContainer"] > .main {
+        background-image: url("https://raw.githubusercontent.com/ahmedjajan93/Mushromms-Classification/main/img.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    
+    [data-testid="stHeader"] {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
+    [data-testid="stToolbar"] {
+        right: 2rem;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
     st.title('Mushromms Classification')
     st.markdown('Are your mushromms edible or poisonous?🍄')
