@@ -28,7 +28,7 @@ def main():
     """
     <style>
     [data-testid="stAppViewContainer"] > .main {
-        background-image: url("https://raw.githubusercontent.com/ahmedjajan93/Mushromms-Classification/main/img.png");
+        background-image: url("https://github.com/ahmedjajan93/Mushromms-Classification/main/img.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
