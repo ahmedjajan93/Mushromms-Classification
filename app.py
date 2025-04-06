@@ -129,7 +129,21 @@ def main():
             st.write('Precision', round(precision_score(y_test,y_pred,labels=class_names),2))
             st.write('Recall',round(recall_score(y_test,y_pred,labels=class_names),2))
             plot_metrics(metrics_list)
-
+    
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://github.com/ahmedjajan93/Mushromms-Classification/main/img.png");
+             background-size:cover;
+             background-position:center;
+             background-repeat: no-repeat;
+             background-attachment: fiexed;
+         }}
+         </style>
+         """,
+           unsafe_allow_html=True
+     )
 
 if __name__ == '__main__':
     main()
