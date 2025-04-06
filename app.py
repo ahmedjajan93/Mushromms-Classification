@@ -8,6 +8,10 @@ from sklearn.metrics import precision_score, recall_score
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+
+# App configuration
+st.set_page_config(page_title="Mushromms Classification", layout="wide")
+
 @st.cache_data
 def load_data():
   with open("split_data.pkl", "rb") as f:
@@ -19,6 +23,22 @@ class_names = ['edible','poisonous']
 X_train, X_test, y_train, y_test = load_data()
 
 def main():
+
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://github.com/ahmedjajan93/Mushromms-Classification/main/background.PNG");
+             background-size:cover;
+             background-position:center;
+             background-repeat: no-repeat;
+             background-attachment: fiexed;
+         }}
+         </style>
+         """,
+           unsafe_allow_html=True
+     )
+
     st.title('Mushromms Classification')
     st.markdown('Are your mushromms edible or poisonous?🍄')
     st.sidebar.title('Sitting 💡')
